@@ -111,8 +111,7 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
 # Experiment 2
 
 ## Accuracy for each iteration ##
-<div class="WordSection1" align="center">
-<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="margin-left:5.8pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+<div class="WordSection1" align="center"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="margin-left:5.8pt;border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid black .75pt;mso-yfti-tbllook:480;mso-padding-alt:
  0cm 0cm 0cm 0cm;mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:21.9pt">
@@ -295,16 +294,10 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
   mso-border-alt:solid black .75pt;padding:0cm 0cm 0cm 0cm;height:21.9pt">
   <p class="TableParagraph"><span style="font-size:16.0pt;mso-bidi-font-size:
   11.0pt">0.9733<o:p></o:p></span></p>
-  </td>
- </tr>
-</tbody></table>
-</div>
+  </td></tr></tbody></table></div>
 
 ## Size for each iteration ##
-<div class="WordSection1" align="center">
-<div align="center">
-
-<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+<div class="WordSection1" align="center"><div align="center"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
  mso-border-alt:solid black .75pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 0cm 0cm 0cm;
  mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:21.9pt">
@@ -381,8 +374,7 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
   padding:0cm 0cm 0cm 0cm;height:21.9pt">
   <p class="TableParagraph" style="margin-top:.75pt;margin-right:9.3pt;
   margin-bottom:0cm;margin-left:9.85pt;margin-bottom:.0001pt"><span style="font-size:16.0pt;mso-bidi-font-size:11.0pt">40%<o:p></o:p></span></p>
-  </td>
-  <td width="197" valign="top" style="width:147.4pt;border-top:none;border-left:
+  </td><td width="197" valign="top" style="width:147.4pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
   mso-border-alt:solid black .75pt;padding:0cm 0cm 0cm 0cm;height:21.9pt">
@@ -488,10 +480,4 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
   mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
   mso-border-alt:solid black .75pt;padding:0cm 0cm 0cm 0cm;height:21.9pt">
   <p class="TableParagraph"><span style="font-size:16.0pt;mso-bidi-font-size:
-  11.0pt">41.0<o:p></o:p></span></p>
-  </td>
- </tr>
-</tbody></table>
-
-</div><br>
-</div>
+  11.0pt">41.0<o:p></o:p></span></p></td></tr></tbody></table></div><br></div>
