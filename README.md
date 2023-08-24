@@ -1,9 +1,51 @@
-# Decision-Tree
-Decision Tree using Scikit-learn and apply it on dataset "BankNote_Authentication.csv" to tell whether a banknote is real or not.
+# Banknote Authentication Decision Tree
 
-Whenever you go to the bank to deposit some cash money, the cashier places banknotes in a machine that tells whether a banknote is real or not. In the “BankNote_Authentication.csv” we have four features: variance, skew, curtosis and entropy and the class attribute refers to whether or not the banknote is real or forged.
+This Python code utilizes the decision tree algorithm from the scikit-learn library to perform banknote authentication. The code aims to analyze the impact of different train-test split ratios and training set sizes on the accuracy and size of the learned decision tree.
 
-# Experiment 1
+## Dataset
+
+The code uses the "BankNote_Authentication.csv" dataset, which contains four features (variance, skew, curtosis, and entropy) and a class attribute indicating whether a banknote is real or forged.
+
+## Requirements
+
+The following libraries are imported in the code:
+
+- `sklearn.tree`: Provides the decision tree classifier.
+- `pandas`: Used for data manipulation and analysis.
+- `sklearn.model_selection.train_test_split`: Splits the data into training and testing sets.
+- `numpy`: Handles mathematical operations and array manipulation.
+- `matplotlib.pyplot`: Enables data visualization.
+
+## Functions
+
+### `measureAccuracy(y_pred, y_test)`
+
+Calculates the accuracy of the predicted labels (`y_pred`) compared to the actual labels (`y_test`). Returns the accuracy as a floating-point value.
+
+### `Experiment_Utility(X, Y, splitRatio)`
+
+Performs an experiment with a specific train-test split ratio (`splitRatio`) using the decision tree algorithm. Splits the data into training and testing sets, fits the decision tree model, and predicts the labels for the testing set. Returns the accuracy and the number of nodes in the decision tree.
+
+### `GetStats(array)`
+
+Calculates the mean, maximum, and minimum values of an input array. Returns the statistics as a NumPy array.
+
+### `Experiment(X, Y, splitRatio)`
+
+Performs multiple experiments with a fixed train-test split ratio (`splitRatio`). Reruns the experiment five times with different random splits of the data. Returns the accuracies and tree sizes for each experiment.
+
+### `plotting(y_axis, fileName)`
+
+Plots the y-axis values against the training set size. Saves the plot as an image file with the specified `fileName`.
+
+### `main()`
+
+The main function reads the dataset, separates the features (X) and the labels (Y), and initializes matrices for accuracy and tree size statistics. It then runs two sets of experiments:
+
+### Experiment 1: Fixed train-test split ratio
+- The function runs the experiment with a 75% training ratio, recording the accuracies and tree sizes for each iteration.
+- The size of each iteration is displayed in the following table:
+
 <div class="WordSection1" align="center"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="margin-left:5.8pt;border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid black .75pt;mso-yfti-tbllook:480;mso-padding-alt:
  0cm 0cm 0cm 0cm;mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black">
@@ -108,9 +150,13 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
 
 <hr>
 
-# Experiment 2
+### Experiment 2: Range of train-test split ratios
+- The function iterates over a range of training set sizes (30% to 70%) and performs the experiment five times with different random seeds.
+- For each training set size, it calculates the mean, maximum, and minimum accuracy and tree size for all iterations.
+- The accuracy and tree size for each iteration are displayed in the following tables:
 
-## Accuracy for each iteration ##
+
+### Accuracy for each iteration ###
 <div class="WordSection1" align="center"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="margin-left:5.8pt;border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid black .75pt;mso-yfti-tbllook:480;mso-padding-alt:
  0cm 0cm 0cm 0cm;mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black">
@@ -296,7 +342,7 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
   11.0pt">0.9733<o:p></o:p></span></p>
   </td></tr></tbody></table></div>
 
-## Size for each iteration ##
+### Size for each iteration ###
 <div class="WordSection1" align="center"><div align="center"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
  mso-border-alt:solid black .75pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 0cm 0cm 0cm;
  mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black">
@@ -481,3 +527,34 @@ Whenever you go to the bank to deposit some cash money, the cashier places bankn
   mso-border-alt:solid black .75pt;padding:0cm 0cm 0cm 0cm;height:21.9pt">
   <p class="TableParagraph"><span style="font-size:16.0pt;mso-bidi-font-size:
   11.0pt">41.0<o:p></o:p></span></p></td></tr></tbody></table></div><br></div>
+  
+     
+## Usage
+
+To run the code, follow these steps:
+
+1. Install the required libraries: `sklearn`, `pandas`, `numpy`, and `matplotlib.pyplot`.
+2. Download the "BankNote_Authentication.csv" dataset and place it in the same directory as the code file.
+3. Run the code. The main function will execute the experiments and generate the accuracy and tree size results.
+4. The code will also generate plots showing the accuracy and tree size against the training set size.
+
+
+## Conclusion
+
+In conclusion, this Python code provides a practical implementation of banknote authentication using a decision tree algorithm. It allows for experimentation with different train-test split ratios and training set sizes, providing insights into how these factors affect the accuracy and size of the decision tree model.
+
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+
+
+## Authors
+
+- [Khaled Ashraf Hanafy Mahmoud - 20190186](https://github.com/KhaledAshrafH).
+- [Noura Ashraf Abdelnaby Mansour - 20190592](https://github.com/NouraAshraff).
+- [Samaa Khalifa Elsayed Othman - 20190247](https://github.com/SamaaKhalifa).
+
+## License
+
+This program is licensed under the [MIT License](LICENSE.md).
